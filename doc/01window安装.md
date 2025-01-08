@@ -13,7 +13,7 @@ JAVA_HOME java的配置路径
 进入 ROCKET_HOME ，输入cmd
 
 ```shell
-mqnameserver 
+mqnameserv
 ```
 
 ### 4. 启动broker
@@ -22,6 +22,15 @@ mqnameserver
 
 ```shell
 mqbroker -n localhost:9876
+```
+
+编写脚本
+
+```shell
+@echo on
+cd /d E:\middle-ware\rocketmq-all-5.3.1-bin-release\bin
+start /b mqnamesrv
+start /b mqbroker -n localhost:9876
 ```
 
 ### 5. 安装rocketmq-dashboard
