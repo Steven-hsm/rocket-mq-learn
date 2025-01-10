@@ -33,6 +33,8 @@ start /b mqnamesrv
 start /b mqbroker -n localhost:9876
 ```
 
+
+
 ### 5. 安装rocketmq-dashboard
 
 https://github.com/apache/rocketmq-dashboard/releases/tag/rocketmq-dashboard-2.0.0
@@ -40,4 +42,14 @@ https://github.com/apache/rocketmq-dashboard/releases/tag/rocketmq-dashboard-2.0
 下载代码后编译
 
 启动应用即可
+
+#### 6. 常用命令
+
+1. 手动创建topic
+
+   ```shell
+   mqadmin updateTopic -n 127.0.0.1:9876 -t topic_test -c DefaultCluster -a +message.type=NORMAL
+   ```
+
+2. 
 

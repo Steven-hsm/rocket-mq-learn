@@ -1,4 +1,4 @@
-package com.hsm.rocketmq.normal;
+package com.hsm.rocketmq.producer.normal;
 
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
 import org.apache.rocketmq.client.producer.SendCallback;
